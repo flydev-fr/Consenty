@@ -1,0 +1,42 @@
+{
+  "name": "consenty",
+  "version": "1.0.0",
+  "description": "A sleek and straightforward JavaScript library designed to simplify consent management on your website",
+  "author": {
+    "name": "Bernhard Baumrock",
+    "email": "office@baumrock.com",
+    "url": "https://www.baumrock.com/"
+  },
+  "contributors": [
+    {
+      "name": "J. Eizmendi",
+      "email": "",
+      "url": "https://github.com/flydev-fr"
+    }
+  ],
+  "main": "./dist/consenty.min.js",
+  "module": "./src/index.js",
+  "type": "module",
+  "homepage": "https://baumrock.github.io/Consenty/",
+  "repository": "github:baumrock/consenty",
+  "private": true,
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.15.0",
+    "@rollup/plugin-node-resolve": "^11.0.1",
+    "babel-jest": "^27.1.0",
+    "jest": "^27.0.6",
+    "rollup": "^2.35.1",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "keywords": [
+    "cookie consent",
+    "privacy",
+    "GDPR compliance"
+  ],
+  "bugs": "https://github.com/baumrock/consenty/issues",
+  "license": "MIT"
+}
