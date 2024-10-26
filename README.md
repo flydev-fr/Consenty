@@ -53,10 +53,9 @@ Add Consenty directly in your HTML with a `<script>` tag:
 <script src="consenty.min.js"></script>
 ```
 
-### Installing via NPM
+### NPM
 Install Consenty via npm or yarn for use in module-based projects:
 
-- npm
 ```bash
 npm install @baumrock/consenty
 # or
@@ -99,17 +98,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('change', consenty.handleChange.bind(consenty));
 });
 ```
-
-## Initialization
-
-### Automatic Initialization (CDN)
-
-When Consenty is included via a <script> tag from a CDN, it automatically:
-
-- Attaches the Consenty class to window.consenty.
-- Creates an instance and initializes it on DOMContentLoaded.
-- Binds necessary event listeners.
-
 ## API Overview
 
 ### Key Methods
