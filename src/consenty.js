@@ -222,17 +222,13 @@ export class Consenty {
 * expose `consenty` instance globally
 */
 (function () {
-  if (typeof window !== 'undefined' && !window.Consenty) {
-    window.Consenty = Consenty
-    document.addEventListener('DOMContentLoaded', () => {
-      const consenty = new Consenty()
-      window.consenty = consenty //
-      consenty.init()
+  if (typeof window !== 'undefined' && !window.consenty) {
+    window.consenty = new Consenty()
+    window.consenty.init()
 
-      // bind event listeners
-      document.addEventListener('click', consenty.handleClick.bind(consenty))
-      document.addEventListener('change', consenty.handleChange.bind(consenty))
-    })
+    // bind event listeners
+    document.addEventListener('click', window.consenty.handleClick.bind(window.consenty))
+    document.addEventListener('change', window.consenty.handleChange.bind(window.consenty))
   }
 })()
 
